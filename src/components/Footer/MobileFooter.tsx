@@ -1,7 +1,7 @@
-import { LogoIcon } from "../Icons";
-import { DiscordIcon, TwitterIcon, UnknownIcon } from "../Icons/Icons";
+import {GithubIcon, LogoIcon} from "../Icons";
+import { TwitterIcon, UnknownIcon } from "../Icons/Icons";
 import Text from "../Text/Text";
-import { MobileFootWrapper, Socials } from "./Style";
+import {MobileFootWrapper, Socials, SocialWrapper} from "./Style";
 
 const MobileFooter = () => {
   return (
@@ -10,9 +10,15 @@ const MobileFooter = () => {
         <span>stay connected</span>
       </Text>
       <Socials>
-          <a style={{display: "table-cell"}} href="https://twitter.com/hidmc12" target="_blank">
-        <TwitterIcon /></a>
-        <UnknownIcon />
+        <a style={{display: "table-cell"}} href="https://github.com/dmc12-xyz/" target="_blank">
+          <SocialWrapper><GithubIcon width={'40'} height={'40'} /></SocialWrapper>
+        </a>
+        <a style={{display: "table-cell"}} href="https://twitter.com/hidmc12" target="_blank">
+          <SocialWrapper><TwitterIcon width={'40'} height={'40'} /></SocialWrapper>
+        </a>
+        <a style={{display: "table-cell"}} href="#" target="_blank">
+          <SocialWrapper><UnknownIcon width={'40'} height={'40'} /></SocialWrapper>
+        </a>
       </Socials>
       <Text
         size="12px"
@@ -30,15 +36,6 @@ const MobileFooter = () => {
         style={{ marginTop: "84px", marginBottom: "20px" }}
       >
         <span>DMC-12</span>
-      </Text>
-      <Text
-        size="12px"
-        weight="400"
-        lineHeight="24px"
-        family="Raven Sans NBP"
-        style={{ textAlign: "left", marginBottom: "50px" }}
-      >
-        <span>helping build web3</span>
       </Text>
       <LogoIcon width="50%" />
     </MobileFootWrapper>

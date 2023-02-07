@@ -8,13 +8,13 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     overflow-x: hidden;
-    background-color:#09032B;
-    background-image: url("/assets/1.png");
+    background-color: #040217;
+    background-image: url("/assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     @media only screen and (max-width: 768px){
-      background-image: url("/assets/dmc12-background-mobile.png");
+      background-image: url("/assets/background-mobile.png");
       background-position: center top 0px;
     }
   }

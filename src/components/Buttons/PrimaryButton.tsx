@@ -3,14 +3,14 @@ import { StyledPrimaryButton } from "./Style";
 import { PrimaryButtonProps } from "./types";
 
 const PrimaryButton = ({
-  width,
-  height,
   text,
   onClick,
+  icon
 }: PrimaryButtonProps) => {
   return (
-    <StyledPrimaryButton width={width} height={height} onClick={onClick}>
+    <StyledPrimaryButton onClick={onClick}>
       {text}
+      {icon ? icon : null}
     </StyledPrimaryButton>
   );
 };

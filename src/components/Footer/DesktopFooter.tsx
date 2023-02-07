@@ -1,7 +1,7 @@
-import { LogoIcon } from "../Icons";
-import { DiscordIcon, TwitterIcon, UnknownIcon } from "../Icons/Icons";
+import {GithubIcon, LogoIcon} from "../Icons";
+import { TwitterIcon, UnknownIcon } from "../Icons/Icons";
 import Text from "../Text/Text";
-import { FootWrapper, LeftWrapper, RightWrapper, RowWrapper } from "./Style";
+import {FootWrapper, LeftWrapper, RightWrapper, RowWrapper, SocialWrapper} from "./Style";
 
 const DesktopFooter = () => {
   return (
@@ -19,27 +19,31 @@ const DesktopFooter = () => {
           <LogoIcon />
         </RowWrapper>
         <Text
-          size="16px"
-          weight="400"
-          family="Raven Sans NBP"
+          size="20px"
+          weight="500"
+          family="Advent Pro"
           lineHeight="32px"
-          style={{ textAlign: "left" }}
+          style={{ textAlign: "left", marginTop: "22px" }}
         >
-          <span>helping build web3</span>
+          <span>Where talented founders accelerate web3 projects..</span>
         </Text>
       </LeftWrapper>
       <RightWrapper>
-        <Text size="40px" weight="400" lineHeight="46.02px">
-          <span>stay connected</span>
-        </Text>
         <RowWrapper>
-          <a style={{display: "table-cell"}} href="https://twitter.com/hidmc12" target="_blank"><TwitterIcon /></a>
-          <UnknownIcon />
+          <a style={{display: "table-cell"}} href="https://github.com/dmc12-xyz/" target="_blank">
+            <SocialWrapper><GithubIcon /></SocialWrapper>
+          </a>
+          <a style={{display: "table-cell"}} href="https://twitter.com/hidmc12" target="_blank">
+            <SocialWrapper><TwitterIcon /></SocialWrapper>
+          </a>
+          <a style={{display: "table-cell"}} href="#" target="_blank">
+            <SocialWrapper><UnknownIcon /></SocialWrapper>
+          </a>
         </RowWrapper>
         <Text
-          size="16px"
+          size="36px"
           weight="400"
-          family="Raven Sans NBP"
+          family="Advent Pro"
           lineHeight="32px"
           style={{ textAlign: "left" }}
         >

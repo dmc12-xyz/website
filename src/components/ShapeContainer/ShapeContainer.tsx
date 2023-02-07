@@ -1,4 +1,3 @@
-import Reawct, { Children } from "react";
 import { ShapeWrapper } from "../../Pages/LandingPage/Style";
 import Text from "../Text/Text";
 interface Props {
